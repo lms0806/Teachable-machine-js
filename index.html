@@ -51,10 +51,10 @@
           // predict can take in an image, video or canvas html element
           const prediction = await model.predict(webcam.canvas);
           if(prediction[0].probability > 0.5){
-            document.querySelector("body").style.backgroundColor="black";
+            document.querySelector('body').style.backgroundColor="black";
           }
           else{
-            document.querySelector("body").style.backgroundColor="white";
+            document.querySelector('body').style.backgroundColor="white";
           }
       }
   </script>
